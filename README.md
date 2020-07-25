@@ -14,4 +14,4 @@ Happy to accept more contributions. Please send pull requests!
 
 ### Files
 
-- Count occurences of a word in a file or a sentence - [count-word-occurences](https://github.com/bashojs/basho-recipes/blob/master/git/count-word-occurences.sh)
+- Count occurences of a word in a file or a sentence - [count-word-occurences](https://github.com/bashojs/basho-recipes/blob/master/files/count-word-occurences.sh)
