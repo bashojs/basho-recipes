@@ -1,6 +1,6 @@
 # basho-recipes
 
-Recipes for Basho (https://github.com/jeswin/basho)
+Recipes for Basho (https://github.com/bashojs/basho)
 
 ### Git
 
