@@ -10,4 +10,4 @@ Recipes for Basho (https://github.com/bashojs/basho)
 
 ### Files
 
-Count occurences of a word in a sentence - [count-word-occurences](https://github.com/jeswin/basho-recipes/git/count-word-occurences.sh)
+- Count occurences of a word in a sentence - [count-word-occurences](https://github.com/jeswin/basho-recipes/git/count-word-occurences.sh)
