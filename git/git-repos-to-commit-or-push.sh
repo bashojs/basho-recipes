@@ -1,3 +1,15 @@
+# Usage
+# ./git-repos-to-commit-or-push.sh
+
+# Explanation
+#
+# 1. Pipe the output of ls to basho
+# 2. flatten the array to get a list of directory names
+# 3. Named each item 'dirname'
+# 4. cd into the directory and do a 'git status'
+# 5. Check if the output of 'git status' has 'nothing to commit' or 'branch is up-to-date'
+# 6. If not, print the previously saved 'dirname'
+
 ls | basho 'x.split("\t")' \
   -m x \
   -n dirname \
