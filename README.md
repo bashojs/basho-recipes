@@ -1,4 +1,4 @@
-# basho-recipes
+# Basho Recipes
 
 Recipes for Basho (https://github.com/bashojs/basho)
 
