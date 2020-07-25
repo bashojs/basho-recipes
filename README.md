@@ -8,6 +8,6 @@ Recipes for Basho (https://github.com/bashojs/basho)
 
 - Find projects under a directory that need to be committed or pushed to remote. [git-repos-to-commit-or-push.sh](https://github.com/jeswin/basho-recipes/git/git-repos-to-commit-or-push.sh)
 
-# Text
+### Files
 
 Count occurences of a word in a sentence - [count-word-occurences](https://github.com/jeswin/basho-recipes/git/count-word-occurences.sh)
