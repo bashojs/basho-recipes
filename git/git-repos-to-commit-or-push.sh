@@ -10,9 +10,10 @@
 # 5. Check if the output of 'git status' has 'nothing to commit' or 'branch is up-to-date'
 # 6. If not, print the previously saved 'dirname'
 
-ls | basho 'x.split("\t")' \
-  -m x \
+ls -alt | basho 'x.split(/\s+/)' \
+  -f 'x.length>2' \
+  -j 'x.slice(-1)[0]' \
+  -f '![".", ".."].includes(x)' \
   -n dirname \
-  -e 'cd ${x} && git status' \
-  -f '!x.some(_ => /nothing to commit/.test(_)) && !x.some(_ => /branch is up-to-date/.test(_))' \
+  -e 'cd ${x} && git status' -f 'x.some(_ => /branch is ahead/.test(_)) || (!x.some(_ => /nothing to commit/.test(_)) && !x.some(_ => /branch is up-to-date/.test(_)))' \
   -s dirname
