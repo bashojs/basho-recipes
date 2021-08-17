@@ -4,12 +4,12 @@
 
 # Explanation
 #
-# 1. Pipe the output of ls to basho
-# 2. Directory entries start with 'd'. Filter them.
-# 3. Named each item 'dirname'
-# 4. cd into the directory and do a 'git pull'
-# 5. Call it gitstatus
-# 5. Seek dirname,gitstatus and print
+# - Pipe the output of ls to basho
+# - Directory entries start with 'd'. Filter them.
+# - Named each item 'dirname'
+# - cd into the directory and do a 'git pull'
+# - Call it gitstatus
+# - Seek dirname,gitstatus and print
 
 ls -alt | \
   basho 'x.split(/\s+/)'  \

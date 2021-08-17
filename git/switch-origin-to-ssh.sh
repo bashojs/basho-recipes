@@ -4,18 +4,18 @@
 
 # Explanation
 #
-# 1. Pipe the output of ls to basho
-# 2. Directory entries start with 'd'. Filter them.
-# 3. Named each item 'dirname'
-# 4. Read git config file and call it 'config'
-# 5. Find the position of [remote "origin"] in the config
-# 6. Call it (the position) 'remotepos'
-# 7. Filter if remotepos not found
-# 8. Club dirname,config,remotepos
-# 9. Find the actual url at remotepos + 1
-# 10. Get the user/org name and project name
-# 11. git remote set-url origin git@github.com:${ORG}/${PROJECT}.git
-# 12. Print glorious success
+# - Pipe the output of ls to basho
+# - Directory entries start with 'd'. Filter them.
+# - Named each item 'dirname'
+# - Read git config file and call it 'config'
+# - Find the position of [remote "origin"] in the config
+# - Call it (the position) 'remotepos'
+# - Filter if remotepos not found
+# - Club dirname,config,remotepos
+# - Find the actual url at remotepos + 1
+# - Get the user/org name and project name
+# - git remote set-url origin git@github.com:${ORG}/${PROJECT}.git
+# - Print glorious success
 
 ls -alt | \
   basho 'x.split(/\s+/)'  \
